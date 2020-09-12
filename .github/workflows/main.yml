@@ -27,5 +27,5 @@ jobs:
         with:
           ftp-server: ${{secrets.FTP_DEPLOY_PATH}}
           ftp-username: ${{secrets.FTP_USERNAME}}
-          ftm-password: ${{secrets.FTP_PW}}
+          ftp-password: ${{secrets.FTP_PW}}
           local-dir: ./public
