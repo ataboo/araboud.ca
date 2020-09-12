@@ -30,5 +30,5 @@ jobs:
           cwd: './araboud.ca_dist'
           message: 'Built by Github Actions'
 env:
-  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  GITHUB_TOKEN: ${{secrets.DIST_REPO_TOKEN}}
 
