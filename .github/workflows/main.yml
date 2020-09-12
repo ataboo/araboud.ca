@@ -23,7 +23,7 @@ jobs:
         run: hugo --minify
       
       - name: Deploy to FTP
-        uses: AsmKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
           ftp-server: ${{secrets.FTP_DEPLOY_PATH}}
           ftp-username: ${{secrets.FTP_USERNAME}}
