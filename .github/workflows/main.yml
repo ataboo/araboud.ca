@@ -5,26 +5,27 @@ on:
       - master
 jobs:
   deploy:
-  runs-on: ubuntu-18.04
-  steps:
-    - name: Git checkout
-      uses: actions/checkout@v2
+    name: Build and FTP Deploy
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
 
-    - name: Update submodules
-      run: git submodule update --init --recursive
+      - name: Update submodules
+        run: git submodule update --init --recursive
 
-    - name: Setup hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: "0.74.3"
-    
-    - name: Build hugo
-      run: hugo --minify
-    
-    - name: Deploy to FTP
-      uses: AsmKirkland/FTP-Deploy-Action@3.1.1
-      with:
-        ftp-server: ${{secrets.FTP_DEPLOY_PATH}}
-        ftp-username: ${{secrets.FTP_USERNAME}}
-        ftm-password: ${{secrets.FTP_PW}}
-        local-dir: ./public
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.74.3"
+      
+      - name: Build hugo
+        run: hugo --minify
+      
+      - name: Deploy to FTP
+        uses: AsmKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{secrets.FTP_DEPLOY_PATH}}
+          ftp-username: ${{secrets.FTP_USERNAME}}
+          ftm-password: ${{secrets.FTP_PW}}
+          local-dir: ./public
