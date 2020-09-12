@@ -3,4 +3,4 @@
 	url = https://github.com/budparr/gohugo-theme-ananke.git
 [submodule "araboud.ca_dist"]
 	path = araboud.ca_dist
-	url = git@github.com:ataboo/araboud.ca_dist.git
+	url = https://github.com/ataboo/araboud.ca_dist.git
