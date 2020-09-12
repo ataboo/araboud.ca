@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     name: Build and FTP Deploy
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
@@ -22,10 +22,11 @@ jobs:
       - name: Build hugo
         run: hugo --minify
       
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      - name: Upload to FTP
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
-          ftp-server: ${{secrets.FTP_DEPLOY_PATH}}
-          ftp-username: ${{secrets.FTP_USERNAME}}
-          ftp-password: ${{secrets.FTP_PW}}
-          local-dir: ./public
+          host: ${{secrets.FTP_DEPLOY_PATH}}
+          user: ${{secrets.FTP_USERNAME}}
+          password: ${{secrets.FTP_PW}}
+          localDir: "public"
+          remoteDir: "public"
