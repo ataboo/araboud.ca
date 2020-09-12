@@ -20,13 +20,15 @@ jobs:
           hugo-version: "0.74.3"
       
       - name: Build hugo
-        run: hugo --minify
+        run: hugo --minify -d ./araboud.ca_dist
       
-      - name: Upload to FTP
-        uses: sebastianpopp/ftp-action@releases/v2
+      - name: Commit to dist submodule
+        uses: EndBug/add-and-commit@v4
         with:
-          host: ${{secrets.FTP_DEPLOY_PATH}}
-          user: ${{secrets.FTP_USERNAME}}
-          password: ${{secrets.FTP_PW}}
-          localDir: "public"
-          remoteDir: "public"
+          author_name: Alex Raboud (CI)
+          author_email: doubar2001@gmail.com
+          cwd: './araboud.ca_dist'
+          message: 'Built by Github Actions'
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
