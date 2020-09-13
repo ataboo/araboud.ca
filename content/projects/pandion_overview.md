@@ -1,11 +1,10 @@
 ---
 title: "Pandion VTOL Drone"
-date: 2020-09-11T19:45:00-06:00
+summary: "A scratch-built R/C VTOL aircraft."
+date: 2020-09-13T00:00:00-06:00
 draft: false
 featured_image: "/imgs/pandion/render_profile.png"
 ---
-
-*A scratch-built R/C VTOL aircraft.*
 
 I have started getting into R/C aircraft recently and have been building a small twin rotor VTOL.  The eventual plan is for it to be an aerial imaging platform that doesn't need a runway for launch and retrieval.  For now, just getting it to hover stably has been quite the challenge.
 

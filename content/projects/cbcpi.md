@@ -1,11 +1,10 @@
 ---
 title: "CBC Pi Radio"
-date: 2019-01-06T19:30:00-06:00
+summary: "A 3d-printed internet radio powered by a Raspberry Pi"
+date: 2020-09-10T00:00:00-06:00
 draft: false
 featured_image: "/imgs/cbcpi/render_profile.png"
 ---
-
-*Raspberry Pi internet radio.*
 
 This small 3d-printed internet radio was a gift for a CBC fan. It also served to get some more experience in Fusion 360.  This project was short and sweet as the scope was concrete from the beginning, and it didn't require a lot of custom work.
 
