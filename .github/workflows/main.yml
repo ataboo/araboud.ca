@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   deploy:
-    name: Build and FTP Deploy
+    name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
@@ -29,6 +29,7 @@ jobs:
           author_email: doubar2001@gmail.com
           cwd: './araboud.ca_dist'
           message: 'Built by Github Actions'
+          force: true
 env:
   GITHUB_TOKEN: ${{secrets.DIST_REPO_TOKEN}}
 
