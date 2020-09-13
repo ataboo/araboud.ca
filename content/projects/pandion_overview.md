@@ -5,6 +5,8 @@ draft: false
 featured_image: "/imgs/pandion/render_profile.png"
 ---
 
+*A scratch-built R/C VTOL aircraft.*
+
 I have started getting into R/C aircraft recently and have been building a small twin rotor VTOL.  The eventual plan is for it to be an aerial imaging platform that doesn't need a runway for launch and retrieval.  For now, just getting it to hover stably has been quite the challenge.
 
 ## Configuration
@@ -42,6 +44,8 @@ I've used an MPU-6050 gyro, a FlySky receiver, 3 small ESCs, 3 buck-converters, 
 I then mounted the control board to the wing on a pivoting test stand to help develop the control software.
 
 ![GIF of wing on test stand](/imgs/pandion/test_stand.gif)
+
+Foam core with hot glue has been great to use for the wing covering and fuselage.  It's easy and quick to work with when prototyping like this.
 
 ## Software
 
