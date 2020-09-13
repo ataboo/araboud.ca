@@ -19,7 +19,7 @@ jobs:
         with:
           repository: 'ataboo/araboud.ca_dist'
           token: '${{secrets.DIST_REPO_TOKEN}}'
-          path: 'araboud.ca/cloned_dist'
+          path: 'cloned_dist'
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
