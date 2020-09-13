@@ -11,8 +11,15 @@ jobs:
       - name: Git checkout
         uses: actions/checkout@v2
 
-      - name: Update submodules
-        run: git submodule update --init --recursive
+      - name: Update theme submodule
+        run: git submodule update --init --recursive themes/ananke
+
+      - name: Checkout dist repo
+        uses: actions/checkout@v2
+        with:
+          repository: 'https://github.com/ataboo/araboud.ca_dist.git'
+          token: '${{secrets.DIST_REPO_TOKEN}}'
+          path: 'araboud.ca_dist'
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
@@ -20,14 +27,14 @@ jobs:
           hugo-version: "0.74.3"
       
       - name: Build hugo
-        run: hugo --minify -d ./araboud.ca_dist
+        run: hugo --minify -d ../araboud.ca_dist
       
       - name: Commit to dist submodule
         uses: EndBug/add-and-commit@v4
         with:
           author_name: Alex Raboud (CI)
           author_email: doubar2001@gmail.com
-          cwd: './araboud.ca_dist'
+          cwd: 'araboud.ca_dist'
           message: 'Built by Github Actions'
           force: true
 env:
