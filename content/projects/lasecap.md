@@ -3,7 +3,15 @@ title: "LaseCap Bird Abatement"
 summary: "A device used to deter birds with a laser."
 date: 2020-09-11T00:00:00-06:00
 draft: false
-featured_image: "/imgs/lasecap/lasecap_render.png"
+thumbnail: "/imgs/lasecap/lasecap_render.png"
+tags: [
+    "Raspberry Pi",
+    "Embedded Software",
+    "Electronics",
+    "Golang",
+    "Custom PCB",
+    "3d Printing"
+]
 ---
 
 A friend of mine who owns a berry farm mentioned that a lot of yield is lost to birds accross the whole industry.  Farmers will use various devices like nets and propane noise-makers to try and keep them away from the crops.  One of the modern devices is a laser that scans the ground to scare-off flocks.  These devices are quite large and expensive which lead me to try developing a smaller scale version with better software options.

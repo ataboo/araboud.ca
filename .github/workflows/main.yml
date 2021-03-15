@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Update theme submodule
-        run: git submodule update --init --recursive themes/ananke
+        run: git submodule update --init --recursive themes/hugo-clarity
 
       - name: Checkout dist repo
         uses: actions/checkout@v2

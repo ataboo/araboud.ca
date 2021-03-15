@@ -1,6 +1,6 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/budparr/gohugo-theme-ananke.git
 [submodule "araboud.ca_dist"]
 	path = araboud.ca_dist
 	url = https://github.com/ataboo/araboud.ca_dist.git
+[submodule "themes/hugo-clarity"]
+	path = themes/hugo-clarity
+	url = https://github.com/chipzoller/hugo-clarity
