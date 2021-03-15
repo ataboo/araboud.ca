@@ -3,7 +3,16 @@ title: "Fish Light Control"
 summary: "An esp32 controlling the brightness of an LED strip for a fish tank."
 date: 2021-02-25T00:00:00-07:00
 draft: false
-featured_image: "/imgs/fishlightcontrol/FishCaseRender.png"
+thumbnail: "/imgs/fishlightcontrol/FishCaseRender_thumb.png"
+tags: [
+    "ESP32",
+    "Electronics",
+    "3d Printing",
+    "Embedded-Software",
+    "C",
+    "IOT",
+    "Custom PCB",
+]
 ---
 
 This was a quick project to have an esp32 control a light strip over our fish tank.  It was nice to keep the scope small and finish it off in a few days.  Our aquarium had a small LED strip light on a rocker switch and I had just picked up a length of WS2812 addressable LED, so this seemed like a good opportunity to try them out.
@@ -34,3 +43,10 @@ Overall was a nice quick project.  I look forward to coming up with new uses for
 
 [fish-light-control on Github](https://github.com/ataboo/fish-light-control)
 
+**Update: 2021-03-14**
+
+The original light seems to work great and it's nice to be able to tune the tone and brightness.  It seems like stock lights are more about showing off the fish but that kind of brightness has to be annoying for them.  We ended up getting 3 new fish and tanks, so I've cleaned up the PCB a bit to have a few boards manufactured.
+
+![A render of the breakout board sent to manufacturing](/imgs/fishlightcontrol/FishLightBoard_v1.0_render.png)
+
+The only major change is trying out the holes for strain relief and direct soldering to the board.

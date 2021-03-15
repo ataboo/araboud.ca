@@ -3,7 +3,15 @@ title: "Pandion VTOL Drone"
 summary: "A scratch-built R/C VTOL aircraft."
 date: 2020-09-13T00:00:00-06:00
 draft: false
-featured_image: "/imgs/pandion/render_profile.png"
+thumbnail: "/imgs/pandion/PandionAssemblyRender_thumb.png"
+tags: [
+    "R/C",
+    "ESP32",
+    "3d Printing",
+    "Embedded Software",
+    "Electronics",
+    "C",
+]
 ---
 
 I have started getting into R/C aircraft recently and have been building a small twin rotor VTOL.  The eventual plan is for it to be an aerial imaging platform that doesn't need a runway for launch and retrieval.  For now, just getting it to hover stably has been quite the challenge.
@@ -12,13 +20,11 @@ I have started getting into R/C aircraft recently and have been building a small
 
 Initially I had planned on this being a tri-copter with even distribution and forward sweeping wings on conversion, but this had a lot of un-needed complexity and the cost of the rear engine would be high.
 
-![Tri-copter Whiteboard Concept](/imgs/pandion/tricopter_concept.png)
+![Latest rendering of Pandion VTOL](/imgs/pandion/PandionAssemblyRender.png)
 
 The main concern was to put the C of G in the right positionon during forward flight and being able to balance while hovering.  I've been getting more comfortable with Fusion 360 and it is an amazing tool to work with.  I took the time to add the approximate weight of materials and the balance and weight was quite close in the finished product.
 
 The latest configuration is pretty close to a V-22 Osprey so the genus Pandion seemed like an appropriate name.  The ducted fan in the rear is purely for pitch control so I would consider it a bi-copter.
-
-![Latest rendering of Pandion VTOL](/imgs/pandion/render_profile.png)
 
 I've seen other bi-copters that will balance 2 axes, but it has been nice to have one control motion per axis with the ducted fan handling pitch.  Initially, I used small geared motors with encoders, but I had difficulty getting them to run consistently.
 
